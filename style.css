@@ -229,231 +229,6 @@ button:hover {
   background: #003080;
 }
 
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-  .produto-card {
-    width: calc(50% - 20px);
-  }
-
-  .filtro-marcas button {
-    padding: 8px 14px;
-    margin: 3px;
-  }
-
-  .barra-pesquisa input {
-    width: 70%;
-  }
-}
-
-@media (max-width: 480px) {
-  .produto-card {
-    width: 100%;
-  }
-
-  .barra-pesquisa input {
-    width: 60%;
-  }
-
-  .filtro-marcas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .filtro-marcas button {
-    flex: 1 0 45%;
-    margin: 5px;
-  }
-}
-
-/* Responsividade geral */
-@media (max-width: 768px) {
-
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 20px;
-  }
-
-  header h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  header nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  header nav a {
-    padding: 8px 14px;
-    font-size: 14px;
-  }
-
-  .banner h2 {
-    font-size: 22px;
-  }
-
-  .banner p {
-    font-size: 14px;
-  }
-
-  .barra-pesquisa input {
-    width: 70%;
-  }
-
-  .filtro-marcas {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-  }
-
-  .filtro-marcas button {
-    padding: 8px 14px;
-    font-size: 13px;
-  }
-
-  .produtos {
-    padding: 10px;
-  }
-
-  .produto-card {
-    width: calc(50% - 10px);
-  }
-
-  footer {
-    text-align: center;
-    padding: 20px 10px;
-  }
-
-  footer p, footer a {
-    font-size: 14px;
-  }
-
-  .contato-btn {
-    margin-bottom: 10px;
-  }
-
-}
-
-/* Responsividade para telas bem pequenas */
-@media (max-width: 480px) {
-
-  .produto-card {
-    width: 100%;
-  }
-
-  .barra-pesquisa input {
-    width: 60%;
-  }
-
-  header nav a {
-    flex: 1 0 100%;
-    text-align: center;
-  }
-
-  .filtro-marcas button {
-    flex: 1 0 45%;
-    margin: 5px;
-  }
-
-}
-
-/* Responsividade geral */
-@media (max-width: 768px) {
-
-  header {
-    flex-direction: column;
-    align-items: center;
-    padding: 15px 20px;
-  }
-
-  header h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
-
-  header nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  header nav a {
-    padding: 8px 14px;
-    font-size: 14px;
-  }
-
-  .banner h2 {
-    font-size: 22px;
-  }
-
-  .banner p {
-    font-size: 14px;
-  }
-
-  .barra-pesquisa input {
-    width: 70%;
-  }
-
-  .filtro-marcas {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-  }
-
-  .filtro-marcas button {
-    padding: 8px 14px;
-    font-size: 13px;
-  }
-
-  .produtos {
-    padding: 10px;
-  }
-
-  .produto-card {
-    width: calc(50% - 10px);
-  }
-
-  footer {
-    text-align: center;
-    padding: 20px 10px;
-  }
-
-  footer p, footer a {
-    font-size: 14px;
-  }
-
-  .contato-btn {
-    margin-bottom: 10px;
-  }
-
-}
-
-/* Responsividade para telas bem pequenas */
-@media (max-width: 480px) {
-
-  .produto-card {
-    width: 100%;
-  }
-
-  .barra-pesquisa input {
-    width: 60%;
-  }
-
-  header nav a {
-    flex: 1 0 100%;
-    text-align: center;
-  }
-
-  .filtro-marcas button {
-    flex: 1 0 45%;
-    margin: 5px;
-  }
-
-}
-
 .linha-filtro {
   display: flex;
   flex-wrap: wrap;
@@ -600,8 +375,10 @@ button:hover {
   margin-top: 15px;
 }
 
-@media (max-width: 768px) {
+/* --- AJUSTE RESPONSIVO MOBILE DELUX EVENT --- */
 
+/* Responsividade para telas até 768px */
+@media (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -637,12 +414,15 @@ button:hover {
   }
 
   .produtos {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
   }
 
   .produto-card {
-    max-width: 90%;
-    margin: 10px auto;
+    width: calc(50% - 20px);
+    margin: 10px;
   }
 
   .produto-card img {
@@ -657,5 +437,26 @@ button:hover {
 
   .contato-btn {
     width: 90%;
+  }
+}
+
+/* Responsividade para telas até 480px */
+@media (max-width: 480px) {
+  .produto-card {
+    width: 100%;
+  }
+
+  .barra-pesquisa input {
+    width: 70%;
+  }
+
+  header nav a {
+    flex: 1 0 100%;
+    text-align: center;
+  }
+
+  .filtro-marcas button {
+    flex: 1 0 45%;
+    margin: 5px;
   }
 }
