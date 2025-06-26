@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Produtos - DELUX EVENT</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>DELUX EVENT</h1>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="eventos.html">Eventos</a>
+  </nav>
+</header>
+
+  <div class="banner">
+  <img src="img/banner-promo.png" alt="Banner Início">
+</div>
+
+<div class="banner">
+  <h2>Todos os Produtos</h2>
+  <p>Que você procura encontra aqui</p>
+</div>
+
+<!-- 🔍 Pesquisa -->
+<div class="filtro">
+<div class="barra-pesquisa">
+  <input type="text" id="buscaProduto" placeholder="Pesquisar produto..." oninput="pesquisarProduto()">
+  <button onclick="pesquisarProduto()"><i class="fas fa-search"></i></button>
+</div>
+<!-- 📑 Filtro por marcas -->
+<div class="filtro-marcas">
+  <div class="linha-filtro">
+    <button onclick="filtrarProdutos('todos')">Todos</button>
+    <button onclick="filtrarProdutos('AliExpress')">AliExpress</button>
+    <button onclick="filtrarProdutos('Pichau')">Pichau</button>
+    <button onclick="filtrarProdutos('Terabyte')">Terabyte</button>
+    <button onclick="filtrarProdutos('Kabum')">Kabum</button>
+    <button onclick="filtrarProdutos('Amazon')">Amazon</button>
+  </div>
+  <div class="linha-filtro">
+    <button onclick="filtrarProdutos('Magalu')">Magalu</button>
+    <button onclick="filtrarProdutos('Casas Bahia')">Casas Bahia</button>
+    <button onclick="filtrarProdutos('Americanas')">Americanas</button>
+    <button onclick="filtrarProdutos('Submarino')">Submarino</button>
+    <button onclick="filtrarProdutos('Carrefour')">Carrefour</button>
+    <button onclick="filtrarProdutos('Mercado Livre')">Mercado Livre</button>
+  </div>
+</div>
+<!-- 🛒 Área de produtos -->
+<section id="lista-produtos" class="produtos">
+<div class="produto-card" data-marca="Pichau">
+  <img src="img/mouse-redragon.png" alt="Mouse">
+  <h3>Mouse Redragon</h3>
+  <p>Mouse Redragon Hana, RGB, 7200DPI, 7 Botoes, Wireless, Preto, M694-RGB</p>
+  <p><strong>R$ 139,99</strong></p>
+  <a href="https://www.pichau.com.br/mouse-redragon-hana-rgb-7200dpi-7-botoes-wireless-preto-m694-rgb" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+ 
+<div class="produto-card" data-marca="Pichau">
+  <img src="img/teclado-redragon.png" alt="Teclado mecanico">
+  <h3>Teclado Mecanico</h3>
+  <p>Teclado Mecanico Redragon Daksa Rainbow Switch Vermelho, K576R-1-PT-RED</p>
+  <p><strong>R$ 1.049,90</strong></p>
+  <a href="https://www.pichau.com.br/teclado-mecanico-redragon-daksa-rainbow-switch-vermelho-k576r-1-pt-red" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Pichau">
+  <img src="img/mouse-logitech.png" alt="Mouse Logitech">
+  <h3>Mouse Logitech G Pro 2</h3>
+  <p>Mouse Gamer Logitech G Pro 2, RGB, 32000DPI, 8 Botoes, Wireless, Branco</p>
+  <p><strong>R$ 709,99</strong></p>
+  <a href="https://pichau.com.br/produto/mouse-gamer" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Pichau">
+  <img src="img/ssd-lexar-nvme.png" alt="ssd NVMe">
+  <h3>SSD Lexar NM620</h3>
+  <p>SSD Lexar NM620, 512GB, M.2 2280, PCIe NVMe, Leitura 3500 MB/s, Gravacao 2400 MB/s, LNM620X512G-RNNNU</p>
+  <p><strong>R$ 239,99</strong></p>
+  <a href="https://www.pichau.com.br/ssd-lexar-nm620-512gb-m-2-2280-pcie-nvme-leitura-3500-mb-s-gravacao-2400-mb-s-lnm620x512g-rnnnu" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Pichau">
+  <img src="img/i3-de-13100f.png" alt="i3 core">
+  <h3>Processador Intel Core</h3>
+  <p>Processador Intel Core I3-13100F, 4-Core, 8-Threads, 3.4GHz (4.5GHz Turbo), Cache 12MB, LGA1700, BX8071513100F-BR</p>
+  <p><strong>R$  599,99</strong></p>
+  <a href="https://www.pichau.com.br/processador-intel-core-i3-13100f-4-core-8-threads-3-4ghz-4-5ghz-turbo-cache-12mb-lga1700-bx8071513100f-br" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Terabyte">
+  <img src="img/monitor-gamer.png" alt="Monitor Gamer">
+  <h3>Monitor Gamer</h3>
+  <p>Monitor Gamer SuperFrame Precision, 27 Pol, Curvo, Full HD, 1ms, 240Hz, FreeSync, HDMI/DP, SFP2702G</p>
+  <p><strong>R$ 1.899,00</strong></p>
+  <a href="https://www.terabyteshop.com.br/produto/22996/monitor-gamer-superframe-precision-27-pol-curvo-full-hd-1ms-240hz-freesync-hdmidp-sfp2702g" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Terabyte">
+  <img src="img/placa-mae-asrock.png" alt="Placa Mãe">
+  <h3>Placa Mãe ASRock</h3>
+  <p>Placa Mãe ASRock A520M-HVS, A520, AMD AM4, mATX, DDR4, 90-MXBE60-A0UAYZ</p>
+  <p><strong>R$ 709,99</strong></p>
+  <a href="https://www.terabyteshop.com.br/produto/16396/placa-mae-asrock-a520m-hvs-a520-amd-am4-matx-ddr4-90-mxbe60-a0uayz" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Terabyte">
+  <img src="img/placa-mae-asus-tuf.png" alt="placa Mãe Asus">
+  <h3>Placa Mãe Asus</h3>
+  <p>Placa Mãe Asus TUF Gaming A520M-PLUS II, Chipset A520, AMD AM4, mATX, DDR4, 90MB17G0-M0EAY0</p>
+  <p><strong>R$ 1.009,99</strong></p>
+  <a href="https://www.terabyteshop.com.br/produto/23583/placa-mae-asus-tuf-gaming-a520m-plus-ii-chipset-a520-amd-am4-matx-ddr4-90mb17g0-m0eay0" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Terabyte">
+  <img src="img/walter-cooler.png" alt="Water Cooler">
+  <h3>Water Cooler</h3>
+  <p>Water Cooler DeepCool LE500, LED 6 Cores 240mm, Intel-AMD, R-LE500-BKLNMC-G-1</p>
+  <p><strong>R$ 599,90</strong></p>
+  <a href="https://www.terabyteshop.com.br/produto/22309/water-cooler-deepcool-le500-led-6-cores-240mm-intel-amd-r-le500-bklnmc-g-1" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Terabyte">
+  <img src="img/monitor-acer.png" alt="Monitor Gamer Acer">
+  <h3>Monitor Gamer Acer</h3>
+  <p>Monitor Gamer Acer SA240Y G0bi, 23,8 Pol, Full HD, 120Hz, IPS, 1ms, HDMI/VGA, UM.QS0AA.005</p>
+  <p><strong>R$ 1.049,90</strong></p>
+  <a href="https://www.terabyteshop.com.br/produto/35036/monitor-gamer-acer-sa240y-g0bi-238-pol-full-hd-120hz-ips-1ms-hdmivga-umqs0aa005" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Kabum">
+  <img src="img/icon-memoria-ram.png" alt="Memória RAM ">
+  <h3>Memória RAM </h3>
+  <p>Memória RAM Corsair Vengeance LPX, 32GB (2x16GB) 3200Mhz DDR4 CL16 Black - CMK32GX4M2E3200C16</p>
+  <p><strong>R$ 549,40</strong></p>
+  <a href="https://www.kabum.com.br/produto/110828/memoria-ram-corsair-vengeance-lpx-32gb-2x16gb-3200mhz-ddr4-cl16-black-cmk32gx4m2e3200c16" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Kabum">
+  <img src="img/placa-6600.png" alt="Placa de video">
+  <h3>RX 6600</h3>
+  <p>Placa de Vídeo RX 6600 CLD 8G ASRock AMD Radeon, 8GB, GDDR6 - 90-GA2RZZ-00UANF</p>
+  <p><strong>R$ 2.176,46</strong></p>
+  <a href="https://www.kabum.com.br/produto/235984/placa-de-video-rx-6600-cld-8g-asrock-amd-radeon-8gb-gddr6-90-ga2rzz-00uanf" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Kabum">
+  <img src="img/monitor-ultraGear.png" alt="monitor">
+  <h3>Monitor UltraGear</h3>
+  <p>Monitor Gamer LG UltraGear 24" FHD, IPS, 180Hz, 1ms GTG, HDR10, DisplayPort e HDMI, AMD FreeSync, NVIDIA G-SYNC, Preto - 24GS60F-B</p>
+  <p><strong>R$  1.445,90</strong></p>
+  <a href="https://www.kabum.com.br/produto/614879/monitor-gamer-lg-ultragear-24-fhd-ips-180hz-1ms-gtg-hdr10-displayport-e-hdmi-amd-freesync-nvidia-g-sync-preto-24gs60f-b" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Kabum">
+  <img src="img/Headset-Gamer.png" alt="Headset Gamer">
+  <h3>Headset Gamer</h3>
+  <p>Headset Gamer Sem Fio HyperX Cloud III, Drivers 53mm, Wireless, Multi Plataforma, Preto e Vermelho - 77Z46AA</p>
+  <p><strong>R$ 1.121,73</strong></p>
+  <a href="https://www.kabum.com.br/produto/536014/headset-gamer-sem-fio-hyperx-cloud-iii-drivers-53mm-wireless-multi-plataforma-preto-e-vermelho-77z46aa" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Amazon">
+  <img src="img/processador-amd.png" alt="Processador AMD">
+  <h3>Processador AMD</h3>
+  <p>Processador AMD Ryzen 5 5600GT, 3.6 GHz, (4.6GHz Max Turbo), Cache 4MB, 6 Núcleos, 12 Threads, AM4 - 100-100001488BOX</p>
+  <p><strong>R$ 1.335,52</strong></p>
+  <a href="https://www.kabum.com.br/produto/520368/processador-amd-ryzen-5-5600gt-3-6-ghz-4-6ghz-max-turbo-cache-4mb-6-nucleos-12-threads-am4-100-100001488box" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Amazon">
+  <img src="img/processador-amd-rz5.png" alt="Processador AMD">
+  <h3>Processador AMD</h3>
+  <p>PROCESSADOR AMD RYZEN 5 5500 3.6GHz (TURBO 4.2GHz) 16MB CACHE AM4 100-100000457BOX</p>
+  <p><strong>R$ 568,90</strong></p>
+  <a href="https://www.amazon.com.br/Processador-AMD-Ryzen-5500-100100000457BOX/dp/B09VCJ171S/ref=sr_1_1_mod_primary_new?c=ts&dib=eyJ2IjoiMSJ9.zC4ZVSOcjE4oa8BJ7FjiC_IG2_wnYW2A0MplV7j5Mvg6nCLmUunXBHxvX3DYqkTDSPN5h0H111Vtcr8nOyMu2D98PFLBG7d1xtA2x7ogj8BAIcdZYkLHncMF4q4JkDXR2GcXL-4hxIKkrQeqKb5VpRkzqlH5bjbrmjJCircAyR2bKQmGo_JsG4X-wVpcGCn8LM3bX8yU1aOMzmOM5agsK5hl5b6QKuGFTQF-ptAmLQvMKYC1upd4EdKfAoAilsTj8Mwyh9_BSEcuCrtSMjyNJ62FVfXrgA3-E62SoMv3-JQ.qvJqMKnOuw1GdCb46tLXzPMMDrn9saKZERsNlv9ePOY&dib_tag=se&keywords=CPUs&qid=1750373076&s=computers&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1&ts_id=16364803011&th=1" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Amazon">
+  <img src="img/placa-mae-gigabyte.png" alt="placa Mãe Gigabyte">
+  <h3>Placa Mãe Gigabyte</h3>
+  <p>Placa Mãe Gigabyte B550M AORUS Elite, Chipset B550, AMD AM4, mATX, DDR4</p>
+  <p><strong>R$ 949,00</strong></p>
+  <a href="https://www.amazon.com.br/PLACA-GIGABYTE-B550M-AORUS-ELITE/dp/B08BN8VD23/ref=lp_17351089011_1_4?pf_rd_p=721161a6-b78b-47dc-9717-91545f5eca72&pf_rd_r=B4N48NB5B8356EKSZ801&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Kabum">
+  <img src="img/mouse-pad-logitech.png" alt="Mousepad Logitech">
+  <h3>Mousepad Logitech</h3>
+  <p>Mousepad Gamer Logitech G G740, Grande (460x400), Atrito Moderado</p>
+  <p><strong>R$ 229,99</strong></p>
+  <a href="https://www.kabum.com.br/produto/477543/mousepad-gamer-logitech-g-g740-grande-460x400-atrito-moderado-943-000804" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Amazon">
+  <img src="img/placa-de-video-rx580.png" alt="Placa de video">
+  <h3>PLACA DE VIDEO</h3>
+  <p>maxsun Placa de Vídeo AMD Radeon RX580 8GB, placa de vídeo de 2048 SP GDDR5 de 256 bits para jogos de PC com 2*DP&1*HDMI Express x 16 3.0 Placa de vídeo para jogos com ventiladores duplos</p>
+  <p><strong>R$ 829,99</strong></p>
+  <a href="https://www.amazon.com.br/maxsun-Radeon-RX580-Express-ventiladores/dp/B0DDBF9K4P/ref=sr_1_1_sspa?c=ts&dib=eyJ2IjoiMSJ9.KxqzsDfxESSOgCdC-oSv1hs3LPJ_W6dMnDKI1d8MdbBwDQQZkKT13Yvxyjw2P5IUmaaEmvbrO0tufmaIszbHSo_TE0_X3XNmevNYhR_CbZvv1AY2kkR57TasXrklXf4GPLUz9fXC24J8wH-EZkHouC4TMDOfP7LbjR_5nVqZDHTwqWuoaEBcUHxy0ukkdCunLy37UiyV8H889ao7J2nTCkxYZT8ZmbsxJvW_i9K_xW4DT2TZakUfouhheghQ-fsEtSUZLC9-Adgmfh0A0l0M0YLGfvMA8WJuQDUWIJNMqPI.3uttwgj1bRU9ze6BYppcRhDfX4HvTOe6rscdwetemnE&dib_tag=se&keywords=Placas%2Bde%2BV%C3%ADdeo&qid=1750384495&s=computers&sr=1-1-spons&ts_id=16364811011&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+<div class="produto-card" data-marca="Amazon">
+  <img src="img/Water-Cooler-rise-mode.png" alt="Water Cooler">
+  <h3>Water Cooler</h3>
+  <p>Water Cooler Rise Mode Gamer Black, RGB, 240mm - RM-WCB-02-RGB</p>
+  <p><strong>R$ 384,00</strong></p>
+  <a href="https://www.amazon.com.br/Water-Cooler-Preto-240mm-Duplo/dp/B08YP52XQG/ref=pd_rhf_gw_s_pd_crcd_d_sccl_1_8/133-7048924-4839953?pd_rd_w=4jDz2&content-id=amzn1.sym.a6bf656f-dec5-4bf8-a331-f2631d86c1a8&pf_rd_p=a6bf656f-dec5-4bf8-a331-f2631d86c1a8&pf_rd_r=AQSE02G231W06WWH932M&pd_rd_wg=UFUK5&pd_rd_r=912bf533-710d-44cd-81b3-5278c8e187b0&pd_rd_i=B08YP52XQG&psc=1" target="_blank">
+    <button>Comprar</button>
+  </a>
+</div>
+
+  <!-- Coloque aqui seus cards com a class="produto-card" e data-marca="Kabum" etc -->
+</section>
+
+<footer>
+  <button onclick="mostrarContato()" class="contato-btn">Entre em contato conosco</button>
+  <div id="contato-links" class="contato-links">
+    <p><i class="fab fa-whatsapp"></i> <a href="https://chat.whatsapp.com/DzaKomrFD5o8DU8yO0yreD" target="_blank">WhatsApp</a></p>
+  </div>
+  <p>&copy; 2025 DELUX EVENT | Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
