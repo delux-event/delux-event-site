@@ -599,3 +599,66 @@ button:hover {
   text-align: center;
   margin-top: 15px;
 }
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .banner h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .banner p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .filtro-marcas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .barra-pesquisa {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barra-pesquisa input {
+    width: 90%;
+    margin-bottom: 8px;
+  }
+
+  .produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .produto-card {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .contato-links p {
+    font-size: 14px;
+  }
+}
