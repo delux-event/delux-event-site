@@ -375,28 +375,109 @@ button:hover {
   margin-top: 15px;
 }
 
-/* --- AJUSTE RESPONSIVO MOBILE DELUX EVENT --- */
+/* RESPONSIVO ATUALIZADO */
 
-/* Responsividade para telas até 768px */
+/* Até 768px */
 @media (max-width: 768px) {
-  header { flex-direction: column; align-items: center; padding: 10px; text-align: center; }
-  nav { flex-direction: column; gap: 10px; }
-  nav a { font-size: 16px; }
-  .banner h2 { font-size: 24px; }
-  .banner p { font-size: 16px; }
-  .filtro-marcas { flex-wrap: wrap; justify-content: center; }
-  .filtro-marcas button { margin: 5px; font-size: 14px; }
-  .produtos { display: flex; flex-wrap: wrap; justify-content: center; padding: 10px; }
-  .produto-card { width: calc(50% - 20px); margin: 10px; }
-  .produto-card img { width: 100%; height: auto; }
-  footer { text-align: center; padding: 20px; }
-  .contato-btn { width: 90%; }
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  nav a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .banner h2 {
+    font-size: 22px;
+  }
+
+  .banner p {
+    font-size: 14px;
+  }
+
+  .barra-pesquisa {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .barra-pesquisa input {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .filtro-marcas {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filtro-marcas button {
+    flex: 1 0 45%;
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .produtos {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .produto-card {
+    width: calc(50% - 15px);
+    margin: 8px;
+  }
+
+  .produto-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .contato-btn {
+    width: 90%;
+  }
 }
 
-/* Responsividade para telas até 480px */
+/* Até 480px */
 @media (max-width: 480px) {
-  .produto-card { width: 100%; }
-  .barra-pesquisa input { width: 70%; }
-  header nav a { flex: 1 0 100%; text-align: center; }
-  .filtro-marcas button { flex: 1 0 45%; margin: 5px; }
+  nav a {
+    flex: 1 0 100%;
+    text-align: center;
+  }
+
+  .barra-pesquisa input {
+    width: 90%;
+  }
+
+  .filtro-marcas button {
+    flex: 1 0 45%;
+    margin: 5px;
+  }
+
+  .produto-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .banner h2 {
+    font-size: 20px;
+  }
+
+  .banner p {
+    font-size: 13px;
+  }
 }
