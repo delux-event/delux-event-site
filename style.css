@@ -375,9 +375,9 @@ button:hover {
   margin-top: 15px;
 }
 
-/* RESPONSIVO ATUALIZADO */
+/* ================= MOBILE RESPONSIVO ================= */
 
-/* Até 768px */
+/* Telas até 768px (tablets e celulares grandes) */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -387,43 +387,22 @@ button:hover {
   }
 
   nav {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
   }
 
   nav a {
-    display: inline-block;
-    font-size: 16px;
-    padding: 8px;
+    font-size: 14px;
+    padding: 8px 10px;
   }
 
   .banner h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .banner p {
-    font-size: 14px;
-  }
-
-  .barra-pesquisa {
-    flex-wrap: wrap;
-    padding: 15px;
-  }
-
-  .barra-pesquisa input {
-    width: 70%;
-    margin-bottom: 10px;
-  }
-
-  .filtro-marcas {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .filtro-marcas button {
-    flex: 1 0 45%;
-    margin: 5px;
     font-size: 14px;
   }
 
@@ -433,30 +412,45 @@ button:hover {
   }
 
   .produto-card {
-    width: calc(50% - 15px);
-    margin: 8px;
+    width: calc(50% - 20px);
+    margin: 10px;
   }
 
-  .produto-card img {
-    width: 100%;
-    height: auto;
+  .filtro-marcas {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filtro-marcas button {
+    font-size: 13px;
+    padding: 8px 12px;
+    flex: 1 0 45%;
+    margin: 5px;
+  }
+
+  .barra-pesquisa input {
+    width: 70%;
+  }
+
+  .banner img {
+    border-radius: 0;
   }
 
   footer {
-    text-align: center;
     padding: 20px 10px;
-  }
-
-  .contato-btn {
-    width: 90%;
+    font-size: 14px;
   }
 }
 
-/* Até 480px */
+/* Telas até 480px (celulares pequenos) */
 @media (max-width: 480px) {
   nav a {
     flex: 1 0 100%;
     text-align: center;
+  }
+
+  .produto-card {
+    width: 100%;
   }
 
   .barra-pesquisa input {
@@ -466,18 +460,5 @@ button:hover {
   .filtro-marcas button {
     flex: 1 0 45%;
     margin: 5px;
-  }
-
-  .produto-card {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  .banner h2 {
-    font-size: 20px;
-  }
-
-  .banner p {
-    font-size: 13px;
   }
 }
